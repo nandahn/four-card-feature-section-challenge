@@ -35,10 +35,11 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-.container-header header{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-header{ 
+    /* display: flex;
+    flex-direction: column; */
+    flex: 1;
+    margin-top: 100px;
 }
 
 .title-1{
@@ -47,11 +48,13 @@ body{
     text-align: center;
     font-weight: lighter;
     line-height: 30px;
+
 }
 
 .title-2{
     text-align: center;
     color: var(--Very-Dark-Blue);
+
 }
 
 .content-1{
@@ -67,29 +70,59 @@ body{
     align-items: center;
     justify-content: center;
     position: relative;
+    flex: 1;
+    /* background-color: red; */
 }
 
-.border{
-  
-}
-.card{
-    width: 428px;
+.card-1{
+    margin-top: 25px;
+    width: 400px;
     background-color: var(--Very-Light-Gray);
-    height: 301px;
+    height: 280px;
     border-radius: 10px;
     padding: 30px;
-    -webkit-box-shadow: 0px 2px 23px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 23px -8px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 23px -8px rgba(0,0,0,0.75);
+    position: absolute;
+    bottom: 350px;
+    border-top: 5px solid var(--Red);
+    -webkit-box-shadow: -2px 11px 23px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 11px 23px -14px rgba(0,0,0,0.75);
+    box-shadow: -2px 11px 23px -14px rgba(0,0,0,0.75);
+}
+
+.card-1:nth-child(1){
+    bottom: 40px;
+    border-top: 5px solid var(--Orange);
+}
+
+/* card calculator */
+.card-1:nth-child(2){
+    bottom: 250px;
+    left: 250px;
+    border-top: 5px solid var(--Blue);
+    /* background-color: purple; */
+    /* display: none; */
+}
+/* card supervisor */
+.card-1:nth-child(3){
+    right: 250px;
+    bottom: 250px;
+    border-top: 5px solid var(--Cyan);
+}
+
+.card-1:nth-child(4){
+    top: 500;
+    /* display: none; */
+    /* background-color: orange; */
 }
 
 .title-card p{
-    font-size: 18px;
+    font-size: 20px;
     color: var(--Very-Dark-Blue);
     font-weight: 600;
 }
 
 .content-card p{
+    margin-top: 15px;
     font-size: 15px;
     width: 320px;
     color: var(--Grayish-Blue);
@@ -97,7 +130,7 @@ body{
 }
 
 .img-card img{
-    margin-top: 115px;
-    margin-left: 300px;
+    margin-top: 60px;
+    margin-left: 270px;
     
 }
